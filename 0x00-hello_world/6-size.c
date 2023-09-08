@@ -1,17 +1,23 @@
 #include <stdio.h>
-
 /**
- * main - is a special function that serves as the entry point for the program
+ * main - to print the size of data types
  *
  * Return: always (0)
+ *
  */
-
 int main(void)
 {
-	printf("Size of a char: %lu\n byte(s)", sizeof(char));
-	printf("Size of init: %lu\n byte(s)", sizeof(int));
-	printf("Size of a long int: %lu\n byte(s)", sizeof(long int));
-	printf("Size of a long long int: %lu\n byte(s)", sizeof(long long int));
-	printf("Size of float: %lu\n byte(s)", sizeof(float));
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float e;
+
+
+	printf("Size of a char: %lu byte(s)\n", sizeof(a));
+	printf("Size of an int: %lu byte(s)\n", sizeof(b));
+	printf("Size of a long int: %lu byte(s)\n", sizeof(c));
+	printf("Size of a long long int: %lu byte(s)\n", sizeof(d));
+	printf("Size of a float: %lu byte(s)\n", sizeof(e));
 	return (0);
 }
